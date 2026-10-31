@@ -1,23 +1,44 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pokedex</title>
+    <title>Pokédex</title>
+
+    <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
 
-    <form id="form-busca">
-        <input type="text" id="nome">
-        <input type="submit">
-    </form>
+    <header>
+        <h1>Pokédex</h1>
+        <p>Encontre Pokémon!</p> <!-- descobri que não tem plural de pokémon, pq é uma palavra invariável -->
+    </header>
 
-    <div id="resultado"></div>
+    <main>
 
-    <h1 id="nomePokemon"></h1>
-    <h2 id="tipo"></h2>
+        <form id="formulario">
+            <input type="text" id="pokemon" placeholder="Nome do Pokémon">
+            <button type="submit">Buscar</button>
+        </form>
 
-    <script type="javascript" src="script.js"></script>
-    
+        <section id="resultado">
+            <h2 id="nome"></h2>
+            <img id="imagem">
+            <p id="tipo"></p>
+            <p id="altura"></p>
+            <p id="peso"></p>
+            <p id="habilidades"></p>
+            <p id="hp"></p>
+            <p id="ataque"></p>
+            <p id="defesa"></p>
+            <p id="velocidade"></p>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
 </body>
 </html>
